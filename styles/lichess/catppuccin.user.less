@@ -23,13 +23,13 @@
 @import "https://userstyles.catppuccin.com/lib/std/v1.less";
 
 @-moz-document domain("lichess.org") {
-  :root:has(body[data-theme="light"]) {
+  :root:has(body[data-theme~="light"]) {
     #catppuccin(@lightFlavor);
   }
-  :root:has(body[data-theme="dark"]) {
+  :root:has(body[data-theme~="dark"]) {
     #catppuccin(@darkFlavor);
   }
-  :root:has(body[data-theme="system"]) {
+  :root:has(body[data-theme~="system"]) {
     @media (prefers-color-scheme: light) {
       #catppuccin(@lightFlavor);
     }
