@@ -45,6 +45,106 @@
     @lastMove: @catppuccin[@@flavor][@@lastMoveColor];
     @check: @catppuccin[@@flavor][@@checkColor];
 
+    /* Lichess, ui/lib/css/theme/_theme.default.scss — ordered dark → light:
+       bg-page < bg < bg-mid < bg-zebra < bg-low < bg-zebra2.
+       Catppuccin: base < surface0 < surface1 < surface2. */
+    --c-bg-page: @base !important;
+    --c-body-gradient: @base !important;
+    --c-bg: @mantle !important;
+    --c-bg-box: @mantle !important;
+    --c-bg-high: @mantle !important;
+    --c-bg-opaque: @mantle !important;
+    --c-page-input: @mantle !important;
+    --c-bg-input: @mantle !important;
+    --c-bg-mid: @surface0 !important;
+    --c-bg-variation: @surface0 !important;
+    --c-bg-zebra: @surface0 !important;
+    --c-bg-low: @surface1 !important;
+    --c-bg-popup: @surface0 !important;
+    --c-bg-header-dropdown: @surface0 !important;
+    --c-bg-zebra2: @surface1 !important;
+    --c-pool-button: fade(@surface0, 66%) !important;
+    --c-metal-top: @surface1 !important;
+    --c-metal-bottom: @surface0 !important;
+    --c-metal-top-hover: @surface2 !important;
+    --c-metal-bottom-hover: @surface1 !important;
+    --c-page-mask: fade(@crust, 60%) !important;
+
+    --c-font: @text !important;
+    --c-font-clear: @text !important;
+    --c-font-clearer: @rosewater !important;
+    --c-font-dim: @subtext0 !important;
+    --c-font-dimmer: @overlay1 !important;
+    --c-font-page: @subtext1 !important;
+    --c-font-shadow: transparent !important;
+    --c-header-dropdown: @text !important;
+    --c-shade: @overlay0 !important;
+    --c-dark: @surface1 !important;
+    --c-dimmer: @crust !important;
+    --c-clearer: @text !important;
+    --c-over: @crust !important;
+    --c-paper: @rosewater !important;
+
+    --c-border: @surface1 !important;
+    --c-border-page: @surface0 !important;
+    --c-border-light: @overlay0 !important;
+
+    --c-primary: @accent !important;
+    --c-primary-dim: darken(@accent, 8%) !important;
+    --c-primary-clear: lighten(@accent, 8%) !important;
+    --c-link: @blue !important;
+    --c-link-dim: darken(@blue, 8%) !important;
+    --c-link-clear: lighten(@blue, 8%) !important;
+    --c-link-hover: @sapphire !important;
+    --c-secondary: @green !important;
+    --c-secondary-dim: darken(@green, 10%) !important;
+    --c-secondary-dimmer: darken(@green, 20%) !important;
+    --c-accent: @peach !important;
+    --c-accent-dim: darken(@peach, 10%) !important;
+    --c-accent-clear: lighten(@peach, 8%) !important;
+    --c-accent-faint: fade(@peach, 40%) !important;
+    --c-accent-glass: fade(@peach, 20%) !important;
+    --c-accent-cloud: fade(@peach, 50%) !important;
+    --c-brag: @yellow !important;
+    --c-brag-hover: lighten(@yellow, 8%) !important;
+    --c-contours: @yellow !important;
+    --c-fancy: @pink !important;
+    --c-clas: @mauve !important;
+    --c-future: @lavender !important;
+    --c-dasher: @green !important;
+    --c-dasher-light: fade(@green, 40%) !important;
+    --c-bot: @pink !important;
+    --c-good: @green !important;
+    --c-warn: @yellow !important;
+    --c-bad: @red !important;
+    --c-error: @red !important;
+    --c-live: @red !important;
+    --c-racer-boost: fade(@yellow, 70%) !important;
+    --c-marathon: @teal !important;
+    --c-tutor-bg: fade(@green, 20%) !important;
+    --c-chat-host-bg: fade(@green, 25%) !important;
+    --c-chat-mention-bg: fade(@yellow, 25%) !important;
+
+    --c-inaccuracy: @sky !important;
+    --c-mistake: @yellow !important;
+    --c-blunder: @red !important;
+    --c-good-move: @green !important;
+    --c-brilliant: @teal !important;
+    --c-interesting: @pink !important;
+    --c-mv-branch-white: @text !important;
+    --c-mv-branch-black: @crust !important;
+
+    --c-patron-1: @green !important;
+    --c-patron-2: @teal !important;
+    --c-patron-3: @sky !important;
+    --c-patron-4: @sapphire !important;
+    --c-patron-5: @blue !important;
+    --c-patron-6: @lavender !important;
+    --c-patron-7: @mauve !important;
+    --c-patron-8: @pink !important;
+    --c-patron-9: @red !important;
+    --c-patron-10: @peach !important;
+
     &,
     body {
       background: @base linear-gradient(to bottom, @crust, @base 116px)
