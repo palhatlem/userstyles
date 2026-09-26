@@ -145,7 +145,9 @@
     --c-patron-9: @red !important;
     --c-patron-10: @peach !important;
 
-    &,
+    /* Only body: a background on <html> stops body's background from propagating
+       to the canvas, so it is painted as a normal block and covers descendants
+       with a negative z-index - Lichess' .rclock .time (#1882). */
     body {
       background: @base linear-gradient(to bottom, @crust, @base 116px)
         no-repeat;
